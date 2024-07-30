@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8847f9;
+}
+
+.course_registration_form {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.heading {
+  text-align: center;
+  padding: 15px 0;
+  color: white;
+  background-color: #1cd679;
+}
+
+form {
+  display: flex;
+  background-color: #191825;
+  padding: 40px;
+  column-gap: 20px;
+}
+
+form #register_form_properties {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+.input_type {
+  height: 50px;
+}
+
+.input_container {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.name, .email, .phone_area_code, .phone_number, .subject, .year_of_study, .university, .experience {
+  position: relative;
+}
+
+.name input, .email input, .phone_area_code input, .phone_number input, .subject select, .year_of_study input, .university input, .experience input {
+  height: 30px;
+  font-size: 15px;
+  border-radius: 6px;
+  padding: 0 10px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  outline: none;
+  color: white;
+}
+
+.name label, .email label, .phone_area_code label, .phone_number label, .subject label, .year_of_study label, .university label, .experience label {
+  position: absolute;
+  top: 6px;
+  left: 15px;
+  color: #fff;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  border: 2px solid #1cd679;
+}
+
+input:focus ~ label, input:valid ~ label, select:focus ~ label, select:valid ~ label {
+  top: -10px;
+  font-size: 12px;
+  padding: 0 5px;
+  background-color: #191825;
+}
+
+select::content {
+  background-color: #191825;
+}
+
+.subject select {
+  height: 36px;
+  font-size: 15px;
+  border-radius: 6px;
+  padding: 0 10px;
+  border: 2px solid #fff;
+  background-color: #191825;
+  color: white;
+  outline: none;
+  appearance: none; 
+  background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiBoZWlnaHQ9IjE0IiB2aWV3Qm94PSIwIDAgMTIgMTIiIHdpZHRoPSIxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNSAxMC41TDExLjUgNEw5LjUgMi4yTDYgNS44TDIuNSAyaC0ydi45TDExLjUgMTB6Ii8+PC9zdmc+');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 30px; 
+}
+
+.subject select:focus {
+  border: 2px solid #1cd679;
+}
+
+.subject label {
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  font-size: 12px;
+  padding: 0 5px;
+  background-color: #191825;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.input_container:nth-child(2),  .input_container:nth-child(6){
+  display: block;
+}
+
+#submit_btn {
+  width: 200px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  font-size: 18px;
+  color: #fff;
+  background-color: transparent;
+  transition: .5s;
+}
+
+#submit_btn:hover {
+  background-color: #1cd679;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: table;
+}
+
+td, th {
+  text-align: center;
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #1cd679;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

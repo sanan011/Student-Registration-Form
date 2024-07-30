@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Registration Form</title>
+</head>
+<body>
+
+  <div class="course_registration_form">
+    <div class="heading">
+      <h3>Course Registration Form</h3>
+    </div>
+
+    <form id="registration_form">
+
+      <div id="register_form_properties">
+        <label class="input_type">Name</label>
+        <label class="input_type">Email</label>
+        <label class="input_type">Phone</label>
+        <label class="input_type">Subject</label>
+        <label class="input_type">University</label>
+        <label class="input_type">Experience</label>
+      </div>
+  
+      <div id="register_form_inputs">
+  
+        <div class="input_container">
+          <div class="name">
+            <input type="text" id="first_name" required spellcheck="false">
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="name">
+            <input type="text" id="last_name" required spellcheck="false">
+            <label for="last_name">Last Name</label>
+          </div>
+        </div>
+  
+        <div class="input_container">
+          <div class="email">
+            <input style="width: 100%;" type="email" id="email" required spellcheck="false">
+            <label for="email">Email</label>
+          </div>
+        </div>
+  
+        <div class="input_container">
+          <div class="phone_area_code">
+            <input type="number" id="area_code" required spellcheck="false">
+            <label for="area_code">Area Code</label>
+          </div>
+          <div class="phone_number">
+            <input type="number" id="phone_number" required spellcheck="false">
+            <label for="phone_number">Phone Number</label>
+          </div>
+        </div>
+  
+        <div class="input_container">
+          <div class="subject">
+            <select name="subject" id="subject">
+              <option value="Front-end">Front-end</option>
+              <option value="Back-end">Back-end</option>
+              <option value="FullStack">FullStack</option>
+              <option value="Cyber Security">Cyber Security</option>
+              <option value="Help Desk">Help Desk</option>
+              <option value="Linux Foundation">Linux Foundation</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="input_container">
+          <div class="year_of_study">
+            <input type="text" id="year_of_study" required spellcheck="false">
+            <label for="year_of_study">Year of Study</label>
+          </div>
+          <div class="university">
+            <input type="text" id="university" required spellcheck="false">
+            <label for="university">University</label>
+          </div>
+        </div>
+  
+        <div class="input_container">
+          <div class="experience">
+            <input style="width: 100%; height: 20vh;" type="text" id="experience" required spellcheck="false">
+            <label for="experience">Your Experience</label>
+          </div>
+        </div>
+
+        <div class="submit_btn_container">
+          <button type="submit" id="submit_btn">Submit</button>
+        </div>
+  
+      </div>
+  
+    </form>
+
+    <table id="students_table" class="hidden">
+      <thead>
+        <tr>
+          <th>Student</th>
+          <th>Student's email</th>
+          <th>Chosen subject</th>
+          <th>Year of study</th>
+          <th>University</th>
+        </tr>
+      </thead>
+      
+      <tbody>
+
+      </tbody>
+    </table>
+
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
